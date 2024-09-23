@@ -12,7 +12,7 @@ mv $HOME/SAClientUtil.* $HOME/SAClientUtil
 export PATH="$HOME/SAClientUtil/bin:${PATH}"
  
 # Fetch only updated files using GitLab CI environment
-updated_files=$(git diff --name-only HEAD~1 HEAD)
+updated_files=$(git diff --name-only HEAD^1 HEAD)
  
 # If there are no updated files, exit
 if [ -z "$updated_files" ]; then
