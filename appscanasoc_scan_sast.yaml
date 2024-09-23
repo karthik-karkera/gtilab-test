@@ -13,6 +13,7 @@ variables:
 stages:
 - scan-sast
 
+
 scan-job:
   stage: scan-sast
   script:
